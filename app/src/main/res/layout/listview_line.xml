@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/picFood"
+        android:layout_margin="10dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"/>
+    <TextView
+        android:id="@+id/nameFood"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/picFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+    <TextView
+
+        android:textStyle="bold"
+        android:id="@+id/priceFood"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/picFood"
+        android:layout_below="@+id/nameFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="21.000 vnd"/>
+    <TextView
+
+        android:textStyle="italic"
+        android:layout_margin="10dp"
+        android:id="@+id/descriptionFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceFood"
+        android:text="This is a description for food"
+        android:layout_toRightOf="@+id/picFood"/>
+</RelativeLayout>
